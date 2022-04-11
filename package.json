@@ -1,0 +1,31 @@
+{
+  "name": "netlify-generative-logos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@georgedoescode/generative-utils": "^1.0.38",
+    "@georgedoescode/vector2d": "^1.0.7",
+    "@netlify/functions": "^1.0.0",
+    "@svgdotjs/svg.js": "^3.1.2",
+    "geometric": "^2.2.10",
+    "kdbush": "^3.0.0",
+    "line-intersect": "^3.0.0",
+    "svgdom": "^0.1.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgedoescode/generative-netlify-logos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgedoescode/generative-netlify-logos/issues"
+  },
+  "homepage": "https://github.com/georgedoescode/generative-netlify-logos#readme"
+}
