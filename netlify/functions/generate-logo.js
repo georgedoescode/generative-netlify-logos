@@ -8,10 +8,10 @@ const { polygonCentroid } = require("geometric");
 const { builder } = require("@netlify/functions");
 
 async function handler(event, context) {
-  const urlparts = event.path.split("/");
+  const urlParts = event.path.split("/");
 
-  const seed = parseInt(urlparts[2]);
-  const colorVariant = urlparts[3] || "dark";
+  const seed = parseInt(urlParts[2]);
+  const colorVariant = urlParts[3] || "dark";
 
   const lineColor = colorVariant === "dark" ? "#151a1e" : "#fff";
 
