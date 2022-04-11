@@ -22,18 +22,25 @@
           auto-fit,
           minmax(min(100%, var(--min)), 1fr)
         );
+        padding: var(--gap);
         background: #151a1e;
+      }
+
+      img {
+        aspect-ratio: 1 / 1;
       }
     </style>
   </head>
   <body></body>
   <script>
-    for (let i = 0; i < 48; i++) {
+    for (let i = 0; i < 100; i++) {
       const el = document.createElement("img");
 
       el.src = `/logos/${i}`;
 
-      if (i > 6) {
+      el.setAttribute("alt", "");
+
+      if (i > 12) {
         el.setAttribute("loading", "lazy");
       }
 
