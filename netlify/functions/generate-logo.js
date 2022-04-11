@@ -262,6 +262,7 @@ async function handler(event, context) {
     headers: {
       "Content-Type": "image/svg+xml",
     },
+    ttl: 604800,
     body: svg.node.outerHTML,
   };
 }
