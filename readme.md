@@ -16,4 +16,4 @@ A generative logo variant can be requested like so:
 
 - `color_variant` is either `dark` or `light` and controls whether the logo has dark (`#151a1e`) or light (`#fff`) lines and nodes.
 
-The `generate-logo` function can create infinite logo variations and caches each generation for seven days.
+The `generate-logo` function can create infinite logo variations and heavily caches each generation for performance.
