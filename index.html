@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generative Netlify Logos</title>
+    <title>Generative Netlify Logos ✨</title>
+    <link rel="icon" href="/logos/0/light" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="An experiment in using Netlify's On-demand builders to create generative assets.
+    "
+    />
+    <meta
+      property="og:image"
+      content="https://generative-on-demand-builder-netlify-logos.netlify.app/og-image.png"
+    />
     <style>
       * {
         margin: 0;
@@ -36,7 +46,7 @@
     for (let i = 0; i < 100; i++) {
       const el = document.createElement("img");
 
-      el.src = `/logos/${i}`;
+      el.src = `/logos/${i}/dark`;
 
       el.setAttribute("alt", "");
 

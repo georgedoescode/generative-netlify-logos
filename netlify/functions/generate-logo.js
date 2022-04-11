@@ -11,6 +11,9 @@ async function handler(event, context) {
   const urlparts = event.path.split("/");
 
   const seed = parseInt(urlparts[2]);
+  const colorVariant = urlparts[3] || "dark";
+
+  const lineColor = colorVariant === "dark" ? "#151a1e" : "#fff";
 
   seedPRNG(seed);
 
@@ -95,12 +98,12 @@ async function handler(event, context) {
   lines.forEach((line) => {
     group.line(line.start.x, line.start.y, line.end.x, line.end.y).stroke({
       width: lineWidth,
-      color: "#151a1e",
+      color: lineColor,
     });
   });
 
   intersectionGroups.forEach((g) => {
-    group.circle(nodeSize).cx(g.center.x).cy(g.center.y).fill("#151a1e");
+    group.circle(nodeSize).cx(g.center.x).cy(g.center.y).fill(lineColor);
   });
 
   group
